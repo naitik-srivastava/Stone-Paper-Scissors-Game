@@ -6,26 +6,26 @@
 body {
     object-fit: fill;
     overflow: hidden;
+    background-color: #f0f4f8; /* Soft light background */
 }
 
 .topbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 800;
     line-height: 4rem;
     font-size: 3.5rem;
-    background-color: #416788;
+    background-color: #00796b; /* Teal */
     height: 5rem;
     width: 100.7vw;
     object-fit: cover;
     margin-top: -10px;
     margin-left: -10px;
-    color: #fb8500;
-    text-shadow: 0 0 0 10rem;
+    color: #ffffff; /* White text */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* Subtle shadow */
     filter: drop-shadow(2px 2px 2px black);
-
 }
 
 #stone {
@@ -36,14 +36,11 @@ body {
     width: 12rem;
     background-size: cover;
     border-radius: 50%;
-
+    
     &:hover {
-        opacity: 50%;
-        cursor: pointer;
-        /* border: 2px solid black; */
+        opacity: 0.7; /* Adjusted opacity for hover effect */
+        cursor: pointer; /* Cursor changes to pointer */
     }
-
-    ;
 }
 
 #paper {
@@ -53,15 +50,11 @@ body {
     width: 12rem;
     background-size: cover;
     border-radius: 50%;
-
+    
     &:hover {
-        opacity: 50%;
-        cursor: pointer;
-        /* border: 2px solid black; */
+        opacity: 0.7; /* Adjusted opacity for hover effect */
+        cursor: pointer; /* Cursor changes to pointer */
     }
-
-    ;
-
 }
 
 #scissors {
@@ -71,18 +64,12 @@ body {
     width: 12rem;
     background-size: cover;
     border-radius: 50%;
-
+    
     &:hover {
-        opacity: 50%;
-        cursor: pointer;
-        /* border: 2px solid black; */
+        opacity: 0.7; /* Adjusted opacity for hover effect */
+        cursor: pointer; /* Cursor changes to pointer */
     }
-
-    ;
-
 }
-
-
 
 .iconC {
     display: flex;
@@ -100,15 +87,17 @@ body {
     font-size: 2.2rem;
     justify-content: space-between;
     margin-top: 80px;
-
+    color: #d50000; /* Bright red for score */
 }
 
 #b1 {
     margin-left: 30px;
+    color: #ffcc00; /* Bright yellow for scores */
 }
 
 #b2 {
     margin-left: 60px;
+    color: #ffcc00; /* Bright yellow for scores */
 }
 
 .user {
@@ -119,17 +108,16 @@ body {
 .comp {
     margin-right: 15px;
     margin-top: -70px;
-
 }
 
 .iden {
-    background-color: rgba(154, 225, 157, 0.4);
+    background-color: rgba(247, 173, 64, 0.2); /* Vibrant orange for the .iden div */
     height: 40vh;
     width: 40vw;
     margin-top: 0px;
     position: absolute;
     margin-left: 29.5vw;
-    box-shadow: 0.1rem 0.1rem 10px 0.2px;
+    box-shadow: 0.1rem 0.1rem 10px 0.2px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,7 +134,6 @@ body {
     animation: fist1 0.8s linear 0s infinite normal;
     position: absolute;
     margin-right: 20vw;
-
 }
 
 .img2 {
@@ -159,8 +146,6 @@ body {
     position: absolute;
     margin-left: 20vw;
     margin-bottom: 15px;
-
-
 }
 
 @keyframes fist1 {
@@ -188,7 +173,6 @@ body {
     width: 100px;
     background-size: cover;
     transform: rotate(90deg);
-
 }
 
 .img4 {
@@ -198,18 +182,14 @@ body {
     transform: rotate(270deg);
 }
 
-
-
 .paper {
     background-image: url("hand-paper.png");
 }
 
 .scissors {
-
     background-image: url("scissor.png");
     height: 120px;
     width: 120px;
-
 }
 
 .stone {
@@ -223,7 +203,7 @@ body {
 .scoreB {
     height: 8vh;
     width: 30vw;
-    background-color: aqua;
+    background-color: #00796b; /* Teal for scoreboard */
     margin-left: 34vw;
     position: absolute;
     margin-top: -10vh;
@@ -234,12 +214,13 @@ body {
     font-weight: 900;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-radius: 20px;
+    color: #ffffff; /* White text for scoreboard */
 }
 
 .reset {
     height: 4.5vh;
     width: 5vw;
-    background-color: aqua;
+    background-color: #e91e63; /* Vibrant pink for reset button */
     margin-left: 46.6vw;
     position: absolute;
     bottom: 245px;
@@ -248,13 +229,11 @@ body {
     align-items: center;
     font-size: 9px;
     font-weight: 1000;
-
-
+    color: white; /* White text for reset button */
 }
 
 .win {
-
-    background-color: blue;
+    background-color: #4caf50; /* Bright green for win message */
     height: 10vh;
     width: 17vw;
     position: absolute;
@@ -264,25 +243,28 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    font-size: 25px;
+    color: white; /* White text for win message */
 }
 
 #sp1 {
-    background-color: #fb8500;
+    background-color: #ff9800; /* Vibrant orange for indicators */
     height: 9vh;
     width: 9vw;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-
     transform: scale(0.8);
     position: fixed;
     top: 24.5vh;
     left: 31vw;
+    font-size: 15px;
+    color: white; /* White text for indicators */
 }
 
 #sp2 {
-    background-color: #fb8500;
+    background-color: #ff9800; /* Vibrant orange for indicators */
     height: 9vh;
     width: 9vw;
     transform: scale(0.8);
@@ -290,9 +272,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-size: 15px;
     position: fixed;
     top: 24.5vh;
     right: 32vw;
-
+    color: white; /* White text for indicators */
 }
